@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -61,6 +62,7 @@ class TestDivide {
 		assertThrows(NegativeNumberException.class,()->operation.perform(50, -10));
 	}
 	
+//	@Disabled("Bug fixing happening for Bug#1234")
 	@Test
 	@DisplayName("-50/-10")
 	void testT006() {

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="gm" class="com.sujata.producer.GoodMorning">
+		<property name="name" value="Shweta"></property>
+	</bean>
+
+	<bean id="ge" class="com.sujata.producer.GoodEvening">
+		<constructor-arg name="name" value="Prince"></constructor-arg>
+	</bean>
+	
+	<bean id="wish" class="com.sujata.producer.WishingEveryone">
+		<constructor-arg name="greet" ref="gm"></constructor-arg>
+	</bean>
+	
+</beans>
